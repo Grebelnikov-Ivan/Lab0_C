@@ -1,13 +1,13 @@
 // Посчитать количесво уникальных элементов, числа одинаковые по модулю, но разные по значению считать как разные
 #include <stdio.h>
 #include <stdbool.h>
-
 // Добавил библиотеки <stdio.h> (избежал ошибки в printf) и <stdbool.h> (для bool)
+// array[szz] Заменил на array[10], также можно было написать //#define szz 10
 
 int main()
 {
     const int szz = 10;    
-        int array[szz] = {5,5,7,3,3,2,2,1,1,10};
+        int array[10] = {5,5,7,3,3,2,2,1,1,10};
         int max = array[0];
         for(int i=1;i < szz;i++)
             if(array[i] > max) max = array[i];
